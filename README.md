@@ -19,8 +19,11 @@ More info about Kirby can be found at http://getkirby.com
 ##Customize it##
 
 By default, the drafts list excludes the error page. You can add more pages to suit the needs of your project:
+
 `'drafts' => panel()->site()->index()->invisible()->not('error')`
-add pages after 'error', separated by a comma, and between single quotes:
+
+Add pages after 'error', separated by a comma, and between single quotes:
+
 `'drafts' => panel()->site()->index()->invisible()->not('error','login','sitemap')`
 
 You can also change the message displayed when there are no drafts in the template.php file.

@@ -40,7 +40,7 @@ You don't have anything to do once the widget is installed. The widget has two s
 
 ## Configuration
 
-By default, the drafts list excludes the error page. You can add more pages to suit the needs of your project, in the `version.php` file:
+By default, the drafts list excludes the error page. You can add more pages to suit the needs of your project, in the `drafts.php` file:
 
 ```
 'drafts' => panel()->site()->index()->invisible()->not('error')

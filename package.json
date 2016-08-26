@@ -1,0 +1,8 @@
+{
+"name": "drafts-widget",
+"description": "Panel dashboard widget displaying all unpublished pages",
+"author": "Mathieu Etienne",
+"license": "MIT",
+"version": "1.1.0",
+"type": "kirby-plugin"
+}

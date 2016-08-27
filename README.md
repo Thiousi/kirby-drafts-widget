@@ -1,5 +1,5 @@
 # Kirby Drafts Widget
-![Version](https://img.shields.io/badge/version-1.1.0-green.svg)
+![Version](https://img.shields.io/badge/version-1.2.0-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Kirby Version](https://img.shields.io/badge/Kirby-2.3%2B-red.svg)
 
@@ -38,21 +38,25 @@ You don't have anything to do once the widget is installed. The widget has two s
 
 ![Kirby Drafts Widget unpublished](https://github.com/Thiousi/kirby-drafts-widget/blob/master/drafts.png)
 
-## Configuration
+## Options
 
-By default, the drafts list excludes the error page. You can add more pages to suit the needs of your project, in the `drafts.php` file:
+The following options can be set in your `/site/config/config.php` file:
 
-```
-'drafts' => panel()->site()->index()->invisible()->not('error')
-```
-
-Add pages after 'error', separated by a comma, and between single quotes:
-
-```
-'drafts' => panel()->site()->index()->invisible()->not('error','login','sitemap')
+```php
+/* Drafts widget */
+c::set('plugin.drafts.widget.exclude', array('error'));
+c::set('plugin.drafts.widget.nodrafts', 'No drafts... Start writing today!');
 ```
 
-You can also change the message displayed when there are no drafts in the `template.php` file.
+### plugin.drafts.widget.exclude
+
+This option is an array of pages that will be excluded from the drafts widget. Add pages after 'error', separated by a comma, and between single quotes
+
+### plugin.drafts.widget.nodrafts
+
+This option is a string, which is displayed instead of the list of drafts when there are no drafts.
+
+
 
 ## To-do
 - [ ] Get list of excluded pages from configuration instead of widget code
@@ -76,3 +80,7 @@ MIT
 - Enhanced Readme
 - Updated screenshots
 - Fixed compressed headline and spacing issues
+
+### 1.2.0
+- Text now set in configuration
+- List of excluded pages now set in configuration

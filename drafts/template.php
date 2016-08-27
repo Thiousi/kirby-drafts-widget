@@ -1,6 +1,6 @@
 <div class="dashboard-box">
   <?php if($drafts->count() == 0): ?>
-    <div class="text">You don't have any drafts... Start writing today!</div>
+    <div class="text"><?php echo c::get('plugin.drafts.widget.nodrafts', 'You don\'t have any drafts... Start writing today!');?></div>
   <?php else: ?>
     <ul class="dashboard-items">
       <?php foreach($drafts as $item): ?>

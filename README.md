@@ -56,11 +56,9 @@ This option is an array of pages that will be excluded from the drafts widget. A
 
 This option is a string, which is displayed instead of the list of drafts when there are no drafts.
 
-
-
 ## To-do
-- [ ] Get list of excluded pages from configuration instead of widget code
-- [ ] Make it multi-lingual
+- [ ] Internationalize widget? Already ok for draft names, only message is not internationalized
+- [X] ~~Get list of excluded pages from configuration instead of widget code~~
 - [X] ~~Update readme~~
 - [X] ~~Make it CLI and submodule compatible~~
 

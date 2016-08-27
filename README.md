@@ -1,4 +1,6 @@
 # Kirby Drafts Widget
+![Kirby Drafts Widget logo](https://github.com/Thiousi/kirby-drafts-widget/blob/master/drafts-logo.png)
+
 ![Version](https://img.shields.io/badge/version-1.2.0-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Kirby Version](https://img.shields.io/badge/Kirby-2.3%2B-red.svg)
@@ -82,3 +84,4 @@ MIT
 ### 1.2.0
 - Text now set in configuration
 - List of excluded pages now set in configuration
+- Readme enhanced with options

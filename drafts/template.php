@@ -1,9 +1,11 @@
+<?php include_once __DIR__ . DS . '..' . DS . 'helpers.php'; ?>
+
 <div class="dashboard-box">
-  <?php if($drafts->count() == 0): ?>
+  <?php if(!hasDrafts()): ?>
     <div class="text"><?php echo c::get('plugin.drafts.widget.nodrafts', 'You don\'t have any drafts... Start writing today!');?></div>
   <?php else: ?>
     <ul class="dashboard-items">
-      <?php foreach($drafts as $item): ?>
+      <?php foreach(drafts() as $item): ?>
         <li class="dashboard-item">
             <a title="<?php __($item->title()) ?>" href="<?php __($item->url('edit')) ?>">
               <figure>

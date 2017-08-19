@@ -47,19 +47,30 @@ The following options can be set in your `/site/config/config.php` file:
 ```php
 /* Drafts widget */
 c::set('plugin.drafts.widget.exclude', array('error'));
+c::set('plugin.drafts.widget.title', 'Your drafts');
 c::set('plugin.drafts.widget.nodrafts', 'No drafts... Start writing today!');
+c::set('plugin.drafts.widget.hide.empty', false);
 ```
 
 ### plugin.drafts.widget.exclude
 
 This option is an array of pages that will be excluded from the drafts widget. Add pages after 'error', separated by a comma, and between single quotes
 
+### plugin.drafts.widget.title
+
+This option is a string, which is displayed instead of 'Your drafts' as the title of the widget.
+
 ### plugin.drafts.widget.nodrafts
 
 This option is a string, which is displayed instead of the list of drafts when there are no drafts.
 
+### plugin.drafts.widget.hide.empty
+
+This option is a boolean. Set it to true to hide the widget if there are no drafts. Of course, the value of `plugin.drafts.widget.nodrafts` is meaningless then.
+
+
 ## To-do
-- [ ] Internationalize widget? Already ok for draft names, only message is not internationalized
+- [x] Internationalize widget? Already ok for draft names, only message is not internationalized
 - [X] ~~Get list of excluded pages from configuration instead of widget code~~
 - [X] ~~Update readme~~
 - [X] ~~Make it CLI and submodule compatible~~
